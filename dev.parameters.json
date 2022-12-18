@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "dev_service_backend": {
+            "value": "brzycki-assignment-backend-dev"
+        },
+        "dev_service_frontend": {
+            "value": "brzycki-assignment-frontend-dev"
+        },
+        "dev_service": {
+            "value": "brzycki-assignment-dev"
+        },
+        "storageAccountName": {
+            "value": "brzyckistorage"
+        },
+        "environmentType": {
+            "value": "nonprod"
+        }
+    }
+}

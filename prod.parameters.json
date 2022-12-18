@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "prod_service_backend": {
+            "value": "brzycki-assignment-backend-prod"
+        },
+        "prod_service_frontend": {
+            "value": "brzycki-assignment-frontend-prod"
+        },
+        "prod_service": {
+            "value": "brzycki-assignment-prod"
+        },
+        "storageAccountName": {
+            "value": "brzyckiprodstorage"
+        },
+        "environmentType": {
+            "value": "prod"
+        }
+    }
+}
