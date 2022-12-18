@@ -52,3 +52,4 @@ properties: {
 }
 
 output appServiceAppHostName string = appServiceApp.properties.defaultHostName
+
