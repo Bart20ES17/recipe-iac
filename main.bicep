@@ -51,7 +51,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   }
 
 module prod_App_backend 'modules/application_one.bicep' = if (environmentType == 'prod') {
-  name: 'appService1'
+  name: 'prod_App_backend'
   params: { 
     location: location
     appServiceAppName: prod_service_backend
@@ -65,7 +65,7 @@ module prod_App_backend 'modules/application_one.bicep' = if (environmentType ==
 }
 
 module prod_App_frontend 'modules/application_two.bicep' = if (environmentType == 'prod') {
-  name: 'appService3'
+  name: 'prod_App_frontend'
   params: { 
     location: location
     appServiceAppName: prod_service_frontend
@@ -80,7 +80,7 @@ module prod_App_frontend 'modules/application_two.bicep' = if (environmentType =
 }
 
 module dev_App_backend 'modules/application_one.bicep' = if (environmentType == 'nonprod') {
-  name: 'appService2'
+  name: 'dev_App_backend'
   params: { 
     location: location
     appServiceAppName: dev_service_backend
@@ -94,7 +94,7 @@ module dev_App_backend 'modules/application_one.bicep' = if (environmentType == 
 }
 
 module dev_App_frontend 'modules/application_two.bicep' = if (environmentType == 'nonprod') {
-  name: 'appService4'
+  name: 'dev_App_frontend'
   params: { 
     location: location
     appServiceAppName: dev_service_frontend
