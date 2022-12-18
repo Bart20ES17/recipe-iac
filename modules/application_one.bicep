@@ -1,5 +1,6 @@
 param location string = resourceGroup().location
 param appServiceAppName string
+
 param appServicePlanName string
 param dbhost string
 param dbuser string
