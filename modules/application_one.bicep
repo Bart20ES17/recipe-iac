@@ -46,6 +46,14 @@ properties: {
         name: 'DBHOST'
         value: dbhost
       }
+      {
+        name: 'SCM_DO_BUILD_DURING_DEPLOYMENT'
+        value: 'true'
+      }
+      {
+        name: 'ENABLE_ORYX_BUILD'
+        value: 'true'
+      }
     ]
   }
   }
